@@ -1,25 +1,24 @@
 body {
-	height: 100vh;
 	background-image: url(./images/graph-dot-background.svg);
 	font-family: sans-serif;
 	font-size: 14px;
-	margin: 75px;
+	margin: auto 15px;
 }
 
 #header {
-	padding: 15px;
-	line-height: 0.5;
+	line-height: 0.5rem;
 }
 
 h3 {
-	margin-bottom: -5px;
+	margin-bottom: 2px;
 }
 
 main > div {
-	margin-bottom: 40px;
+	margin-bottom: 15px;
 }
 
 hr {
+	margin-top: 0px;
 	border: none;
 	border-top: 1.3px dotted black;
 }
@@ -27,45 +26,30 @@ hr {
 #summary > p {
 	text-indent: 25px;
 	text-align: justify;
-	margin-bottom: -5px;
+	margin: 0px;
 }
 
-#skills > ul > li {
-	font-weight: bold;
+#education > p {
+	margin-top: 0px;
+	margin-bottom: 5px;
 }
 
-#skills > ul ul {
-	list-style: none;
-	line-height: 1.75em;
-	font-weight: normal;
-}
-
-#skills > ul > li > ul > li:before {
-	content: "-";
-	position: absolute;
-	margin-left: -1.5em;
-}
-
-#education > p,
-#projects > p {
-	display: inline-block;
-}
-
-.place,
-.project {
+.left-item {
 	text-align: left;
-	width: 60%;
 	font-weight: bold;
 }
 
-.timeline {
-	text-align: right;
-	width: 40%;
+.right-item {
+	float: right;
+}
+
+#projects > p {
+	margin: 5px auto;
 }
 
 #education ul {
-	margin-top: -10px;
-	line-height: 1.75em;
+	line-height: 1.35em;
+	margin: 0px auto;
 }
 
 table {
@@ -77,8 +61,29 @@ td {
 	padding: 5px;
 }
 
+#skills > ul {
+	columns: 2;
+	margin: 0px auto;
+}
+
+#skills > ul > li {
+	font-weight: bold;
+}
+
+#skills > ul ul {
+	line-height: 1.65em;
+	font-weight: normal;
+	list-style-type: "-  ";
+	margin-left: -2px;
+}
+
+#pastimes-activities {
+	margin-bottom: 0px;
+}
+
 #pastimes-activities > ul {
-	line-height: 1.75em;
+	line-height: 1.25em;
+	margin: 5px auto;
 }
 
 a {
