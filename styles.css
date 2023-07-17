@@ -1,3 +1,9 @@
+@media (prefers-reduced-motion: no-preference) {
+	* {
+		scroll-behavior: smooth;
+	}
+}
+
 body {
 	background-image: url(./images/graph-dot-background.svg);
 	font-family: sans-serif;
@@ -74,7 +80,7 @@ td {
 	line-height: 1.65em;
 	font-weight: normal;
 	list-style-type: "-  ";
-	margin-left: -5px;
+	margin-left: -25px;
 }
 
 #pastimes-activities {
@@ -93,4 +99,22 @@ a {
 a:hover,
 a:visited {
 	color: #059862;
+}
+
+@media only screen and (max-width: 405px) {
+	body {
+		font-size: 9px;
+	}
+}
+
+@media only screen and (min-width: 406px) and (max-width: 413px) {
+	body {
+		font-size: 10px;
+	}
+}
+
+@media only screen and (min-width: 414px) and (max-width: 575px) {
+	body {
+		font-size: 12px;
+	}
 }
